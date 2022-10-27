@@ -171,6 +171,36 @@ h1 {
 
 
 
+footer {
+    background-color: #011827;
+    color:#FFFFFF;
+    padding: 36px 1.5rem;
+}
+
+footer li {
+    list-style: none;
+    font-size: 18px
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 7px
+}
+
+.footer-text {
+    font-size: 18px;
+    margin-bottom: 36px
+}
+
+.list-gap {
+    margin-bottom: 18px;
+}
+
+
+
+
+
 
 
 .primary-btn {
