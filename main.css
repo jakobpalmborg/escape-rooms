@@ -139,6 +139,35 @@ h1 {
 
 
 
+.story-banner {
+    background-color: #011827;
+    color:#FFFFFF;
+    text-align: center;
+    padding-bottom: 110px;
+}
+
+.story-text {
+    font-size: 28px;
+    padding: 95px 20px 40px 20px;
+}
+
+.content-heading {
+    font-size: 32px;
+    margin: 30px 0;
+}
+
+.content-text {
+    font-size: 24px;
+    margin: 30px 0;
+    }
+
+.content-container {
+    padding: 1rem;
+}
+
+.content-btn {
+    margin: 83px 0;
+}
 
 
 
@@ -198,6 +227,7 @@ h1 {
     border-radius: 4px;
     background: transparent;
     border: 2px solid #8ACFE5;
+    color:#8ACFE5;
 }
 
 .header-img {
@@ -207,6 +237,9 @@ h1 {
 .header-img, .content-img {
     width: 100%;
 }
+
+
+
 
 
 
