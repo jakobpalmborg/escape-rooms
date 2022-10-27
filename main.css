@@ -45,11 +45,66 @@ h1 {
     display: none;
 }
 
+.primary-btn {
+    height: 66px;
+    width: 308px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 4px;
+    background-color: #E3170A;
+    color: white;
+    border: none;
+}
 
+.secondary-btn {
+    height: 66px;
+    width: 308px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 4px;
+    background-color: #8ACFE5;
+    border: none;
+}
+
+.online-challenges-mobile-btn {
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    color: #36769D;
+    font-weight: 700;
+}
+
+.card-btn {
+    height: 44px;
+    width: 179px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    background-color: #E3170A;
+    color: white;
+    border: none;
+}
+
+.dark-btn {
+    height: 66px;
+    width: 308px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 4px;
+    background: transparent;
+    border: 2px solid #8ACFE5;
+}
 
 .header-img, .content-img {
     width: 100vw;
 }
+
+
+
+
+
+
 
 .card-img {
     width: 80vw;
