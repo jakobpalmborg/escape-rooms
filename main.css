@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
 }
 
 html {
     font-family: 'Roboto', sans-serif;
 }
+
 
 /* || HEADER  */
 
@@ -16,7 +17,6 @@ header {
     color: #ffffff;
     width: 100vw;
     height: 144px;
-    
 }
 
 .header-heading-container {
@@ -111,6 +111,7 @@ nav {
     }
 
 
+/* || QUOTES */
 
 .quote-img {
     height: 72px;
@@ -280,13 +281,10 @@ footer li {
     font-weight: 700;
     border-radius: 4px;
     background-color: #8ACFE5;
-    border: none;
-   
-
-    
+    border: none;   
 }
 
-.online-challenges-mobile-btn {
+.online-challenges-btn {
     font-size: 16px;
     background: transparent;
     border: none;
@@ -328,5 +326,33 @@ footer li {
 
 .btn-container {
     text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    .online-challenges-btn {
+        height: 66px;
+        width: 308px;
+        font-size: 24px;
+        font-weight: 700;
+        border-radius: 4px;
+        background-color: #E3170A;
+        color: white;
+        border: none;
+        display: block;
+        text-decoration: none;
+        margin-top: 0;
+    }
+
+    .top-btn-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 17px;
+        margin-top: -35px;
+
+    }
+
+
 }
 
