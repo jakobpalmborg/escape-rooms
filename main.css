@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red;  */
+    border: 1px solid red; 
 }
 
 html {
@@ -15,7 +15,7 @@ html {
 header {
     background-color: #011827; 
     color: #ffffff;
-    width: 100vw;
+    width: 100%;
     height: 144px;
 }
 
@@ -45,7 +45,6 @@ nav {
 .logo img {
     width: 128px;
     height: 82px;
-    display: grid;
 }
 
 .line {
@@ -73,14 +72,18 @@ nav {
 
 @media screen and (min-width: 768px) {
 
+   
+    }
     .header-heading {
         width: auto;
         font-size: 40px;
         height: 40px;
         margin-top: auto;
-        margin-left: 2rem;   
-    }
-    
+        margin-left: 2rem;
+  
+    } 
+ 
+
     nav {
         padding-top: 20px;
     }
@@ -108,7 +111,7 @@ nav {
         width: 100%;
     }
 
-    }
+   
 
 
 /* || QUOTES */
@@ -137,6 +140,25 @@ nav {
     font-size: 24px;
     font-style: italic;
 }
+
+@media screen and (min-width: 768px) {
+    .grid-container {
+        display: flex;
+        padding: 0 4rem;    
+    }
+
+    .quote-container {
+        display: flex;
+    }
+
+    .quote-img {
+        height: 96px;
+    }
+}
+
+
+
+
 
 .challenges-header {
     font-size: 32px;
@@ -203,6 +225,7 @@ nav {
     color:#FFFFFF;
     text-align: center;
     padding-bottom: 110px;
+    margin-top: 56px;
 }
 
 .story-text {
@@ -222,6 +245,7 @@ nav {
 
 .content-container {
     padding: 1rem;
+    text-align: center;
 }
 
 .content-btn {
@@ -262,6 +286,12 @@ footer li {
 
 
 
+
+
+
+
+
+
 .primary-btn {
     height: 66px;
     width: 308px;
@@ -271,8 +301,8 @@ footer li {
     background-color: #E3170A;
     color: white;
     border: none;
-    display: block;
-}
+    
+   }
 
 .secondary-btn {
     height: 66px;
@@ -292,6 +322,7 @@ footer li {
     color: #36769D;
     font-weight: 700;
     margin-top: 37px;
+    
 }
 
 .card-btn {
