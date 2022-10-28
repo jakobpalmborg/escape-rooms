@@ -142,7 +142,7 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-    .grid-container {
+    .flex-container {
         display: flex;
         padding: 0 4rem;    
     }
@@ -156,11 +156,9 @@ nav {
     }
 }
 
+/* || CARDS */
 
-
-
-
-.challenges-header {
+.challenges-heading {
     font-size: 32px;
     text-align: center;
     font-weight: 400;
@@ -216,6 +214,29 @@ nav {
 .card-container {
     margin-bottom: 47px;
 }
+
+@media screen and (min-width: 768px) {
+    .challenges-heading {
+        font-size: 36px;
+        margin-bottom: 87px;
+    }
+    
+    .card {
+        margin: 0;
+        height: 446px;
+        width: 363px;
+    }
+
+    .card-2, .card-3 {
+        display: block;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
 
 
 
