@@ -176,7 +176,6 @@ header {
     .nav-list {
         display: flex;
         justify-content: space-evenly;
-        margin-top:
     }
     
     .hamburger-container {
@@ -248,7 +247,7 @@ header {
 .card-container {
     display: flex;
     margin-bottom: 47px;
-    gap: min(37px);
+    gap: 37px;
     overflow: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none; 
@@ -271,11 +270,8 @@ header {
     max-width: 363px;
     height: 446px;   
     border-radius: 8px;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
-}
-
-.card-1 {
-    margin-left: 52px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px 0px;
+    margin: 10px   
 }
 
 .card-img {
@@ -312,10 +308,16 @@ header {
     margin: 0.5rem 1rem;
 }
 
+@media screen and (min-width: 470px) {
+    .card-1 {
+        margin-left: 50px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .card-container {
         margin-bottom: 87px;
-        margin-top: 0;
+       
     }
 }
 
@@ -331,6 +333,7 @@ header {
 
     .card-container {
         justify-content: space-evenly;  
+        margin-top: 0;
     }
   
 }
