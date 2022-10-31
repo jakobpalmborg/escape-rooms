@@ -158,19 +158,38 @@ header {
 
 /* || CARDS */
 
+.card-container {
+    display: flex;
+    
+    margin-bottom: 87px;
+    gap: min(37px);
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+  }
+
 .challenges-heading {
     font-size: 32px;
     text-align: center;
     font-weight: 400;
     margin-top: 105px;
+    
 }
 
 .card {
-    width: 80%;
-    margin-left: 7%;
-    margin-right: auto;
+    min-width: 363px;
+    max-width: 263px;
     margin-top: 44px;
     border-radius: 8px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
+}
+
+.card-1 {
+    margin-left: 52px;
 }
 
 .card-img {
@@ -207,35 +226,23 @@ header {
     margin: 0.5rem 1rem;
 }
 
-.card-2, .card-3 {
-    display: none;
-}
 
-.card-container {
-    margin-bottom: 47px;
-}
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 1280px) {
     .challenges-heading {
         font-size: 36px;
         margin-bottom: 87px;
     }
     
-    .card {
-        margin: 0;
-        height: 446px;
-        width: 363px;
-    }
-
-    .card-2, .card-3 {
-        display: block;
+    .card-1 {
+        margin-left: 0;
     }
 
     .card-container {
-        display: flex;
-        justify-content: space-evenly;
-        margin-bottom: 87px;
+        justify-content: space-evenly;  
     }
+  
 }
 
 
