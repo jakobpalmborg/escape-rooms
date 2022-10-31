@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
 }
 
 html {
@@ -337,7 +337,8 @@ header {
 footer {
     background-color: #011827;
     color:#FFFFFF;
-    padding: 36px 1.5rem;
+    padding: 64px 1.5rem;
+   
 }
 
 footer li {
@@ -348,7 +349,8 @@ footer li {
 .footer-heading {
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 7px
+    margin-bottom: 7px;
+    padding: 36 0;
 }
 
 .footer-text {
@@ -360,10 +362,30 @@ footer li {
     margin-bottom: 18px;
 }
 
+.follow-us {
+    padding-top: 36px;
+}
 
 
+@media screen and (min-width: 1280px) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
 
+    .footer-info {
+        grid-column: 2 / span 4;
+    }
 
+    .site-map {
+        grid-column: 8 / span 1;
+    }
+
+    .follow-us {
+        grid-column: 10 / span 1;
+        padding: 0;
+    }
+}
 
 
 
