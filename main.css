@@ -4,15 +4,7 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: "Roboto", sans-serif;
-}
-
-body {
-  max-width: 1400px;
-  margin: auto;
-}
-
+/* || MIXINS */
 /* || VARIABLES */
 /* PLACEHOLDERS */
 .dark-btn, .secondary-btn, .primary-btn {
@@ -21,6 +13,15 @@ body {
   font-size: 24px;
   font-weight: 700;
   border-radius: 4px;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  max-width: 1400px;
+  margin: auto;
 }
 
 /* || BUTTONS */
@@ -44,7 +45,7 @@ body {
   font-weight: 700;
   margin-top: 37px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .online-challenges-btn {
     height: 66px;
     width: 308px;
@@ -81,7 +82,7 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .top-btn-container {
     display: flex;
     flex-direction: row-reverse;
@@ -97,7 +98,7 @@ header {
   width: 100%;
   height: 144px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   header {
     height: 216px;
   }
@@ -116,7 +117,7 @@ header .header-heading-container .header-heading {
   width: 90px;
   font-size: 24px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   header .header-heading-container .header-heading {
     width: auto;
     font-size: 40px;
@@ -129,7 +130,7 @@ header .header-heading-container .header-heading {
 header .hamburger-container {
   margin-left: auto;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   header .hamburger-container {
     display: none;
   }
@@ -141,7 +142,7 @@ header .hamburger-container .line {
   border-radius: 25px;
   margin: 7px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   header nav {
     padding-top: 20px;
   }
@@ -149,7 +150,7 @@ header .hamburger-container .line {
 header nav .nav-list {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   header nav .nav-list {
     display: flex;
     justify-content: space-evenly;
@@ -167,7 +168,7 @@ header nav .nav-list li:hover {
 .header-img-xl {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .header-img-xl {
     display: block;
     width: 100%;
@@ -177,7 +178,7 @@ header nav .nav-list li:hover {
 .header-img {
   margin-bottom: 37px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .header-img {
     display: none;
   }
@@ -192,7 +193,7 @@ header nav .nav-list li:hover {
   display: flex;
   padding: 67px 20px 0 20px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .quote-container {
     display: flex;
     padding-top: 107px;
@@ -202,7 +203,7 @@ header nav .nav-list li:hover {
   height: 72px;
   padding-right: 20px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .quote-container .quote-img {
     height: 96px;
   }
@@ -220,14 +221,14 @@ header nav .nav-list li:hover {
 .quote-2 {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .quote-2 {
     display: flex;
     padding-top: 107px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .flex-container {
     display: flex;
     padding: 0 4rem;
@@ -240,7 +241,7 @@ header nav .nav-list li:hover {
   font-weight: 400;
   margin-top: 105px;
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .challenges-heading {
     font-size: 36px;
     margin-bottom: 87px;
@@ -261,17 +262,17 @@ header nav .nav-list li:hover {
     margin-left: 50px;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .card-container {
     margin-bottom: 87px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .card-container {
     margin-left: 0;
   }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .card-container {
     justify-content: space-evenly;
     margin-top: 0;
@@ -328,7 +329,7 @@ header nav .nav-list li:hover {
   font-size: 28px;
   padding: 95px 20px 40px 20px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .story-banner .story-text {
     margin: 0 20%;
   }
@@ -338,7 +339,7 @@ header nav .nav-list li:hover {
 .online-img-big {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .online-img-big {
     display: block;
     grid-column: 7/span 6;
@@ -348,7 +349,7 @@ header nav .nav-list li:hover {
 .content-heading {
   font-size: 32px;
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .content-heading {
     padding: 30px 0 0 0;
   }
@@ -363,7 +364,7 @@ header nav .nav-list li:hover {
   padding: 30px 20px 64px 20px;
   text-align: left;
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .content-container {
     padding: 0;
   }
@@ -372,7 +373,7 @@ header nav .nav-list li:hover {
 .content-btn {
   margin: 30px 0;
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .content-btn {
     margin: 0;
   }
@@ -382,7 +383,7 @@ header nav .nav-list li:hover {
   text-align: left;
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .online-img-small {
     display: none;
   }
@@ -409,7 +410,7 @@ footer {
   color: #FFFFFF;
   padding: 64px 1.5rem;
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   footer {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -440,14 +441,14 @@ footer li {
 .follow-us {
   padding-top: 36px;
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .follow-us {
     grid-column: 10/span 1;
     padding: 0;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .footer-info {
     grid-column: 2/span 4;
   }
