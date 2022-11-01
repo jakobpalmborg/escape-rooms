@@ -4,41 +4,10 @@
     box-sizing: border-box;
 }
 
+@import "helper/placeholders";
+@import "helper/mixins";
+@import "helper/variables";
 
-
-/* || MIXINS */
-
-@mixin M-screen {
-    @media (min-width: 768px) { @content; }
-} 
-
-@mixin XL-screen {
-    @media (min-width: 1200px) { @content; }
-}
-
-@mixin custom-screen($min-width) {
-    @media (min-width: $min-width) { @content; }
-}
-
-
-    
-
-/* || VARIABLES */
-
-$primary-btn-color: #E3170A; 
-$secondary-btn-color: #8ACFE5;
-$background-color: #011827;
-
-
-/* PLACEHOLDERS */
-
-%large-btn {
-    height: 66px;
-    width: 308px;
-    font-size: 24px;
-    font-weight: 700;
-    border-radius: 4px;   
-}
 
 html {
     font-family: 'Roboto', sans-serif;
@@ -48,6 +17,7 @@ body {
     max-width: 1400px;
     margin: auto;
 }
+
 
 /* || BUTTONS */
 

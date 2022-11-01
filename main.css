@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-/* || MIXINS */
-/* || VARIABLES */
-/* PLACEHOLDERS */
 .dark-btn, .secondary-btn, .primary-btn {
   height: 66px;
   width: 308px;
