@@ -13,6 +13,12 @@ body {
     margin: auto;
 }
 
+/* || VARIABLES */
+
+$primary-btn-color: #E3170A; 
+$secondary-btn-color: #8ACFE5;
+$background-color: #011827;
+
 
 /* PLACEHOLDERS */
 
@@ -29,14 +35,14 @@ body {
 
 .primary-btn {
     @extend %large-btn;
-    background-color: #E3170A;
+    background-color: $primary-btn-color;
     color: white;
     border: none;
 }
 
 .secondary-btn {
     @extend %large-btn;
-    background-color: #8ACFE5;
+    background-color: $secondary-btn-color;
     border: none;   
 }
 
@@ -55,7 +61,7 @@ body {
         font-size: 24px;
         font-weight: 700;
         border-radius: 4px;
-        background-color: #E3170A;
+        background-color: $primary-btn-color;
         color: white;
         border: none;
         display: block;
@@ -70,7 +76,7 @@ body {
     font-size: 16px;
     font-weight: 700;
     border-radius: 4px;
-    background-color: #E3170A;
+    background-color: $primary-btn-color;
     color: white;
     border: none;
 }
@@ -79,7 +85,7 @@ body {
     @extend %large-btn;
     background: transparent;
     border: 2px solid #8ACFE5;
-    color:#8ACFE5;
+    color: $secondary-btn-color;
 }
 
 .btn-container {
@@ -101,7 +107,7 @@ body {
 /* || HEADER  */
 
 header {
-    background-color: #011827; 
+    background-color: $background-color; 
     color: #ffffff;
     width: 100%;
     height: 144px;
@@ -174,7 +180,7 @@ header {
                 font-weight: 700;
         
                 &:hover {
-                    color:#8ACFE5;
+                    color: $secondary-btn-color;
                 } 
             }
         }
@@ -344,7 +350,7 @@ header {
 /* || STORY */
 
 .story-banner {
-    background-color: #011827;
+    background-color: $background-color;
     color:#FFFFFF;
     text-align: center;
     margin-top: 56px;
@@ -436,7 +442,7 @@ header {
 /* || FOOTER */
 
 footer {
-    background-color: #011827;
+    background-color: $background-color;
     color:#FFFFFF;
     padding: 64px 1.5rem;
 
