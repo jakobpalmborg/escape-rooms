@@ -254,7 +254,7 @@ header nav .nav-list li:hover {
   scrollbar-width: none;
   margin-top: 44px;
 }
-@media screen and (min-width: 470px) {
+@media (min-width: 470px) {
   .card-container {
     margin-left: 50px;
   }

@@ -269,7 +269,7 @@ header {
     scrollbar-width: none; 
     margin-top: 44px;
 
-    @media screen and (min-width: 470px) {
+    @include custom-screen(470px) {
         margin-left: 50px;
     }
 
