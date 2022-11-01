@@ -9,6 +9,10 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    max-width: 1400px;
+    margin: auto;
+}
 
 /* || BUTTONS */
 
