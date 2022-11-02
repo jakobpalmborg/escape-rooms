@@ -345,16 +345,18 @@ header {
     background-color: $background-color;
     color:#FFFFFF;
     text-align: center;
+    padding: 95px 20px;
     margin-top: 56px;
-    height: 500px;
+    // height: 500px;
+    @include Large-screen() {        
+        padding: 95px 20%;       
+    }
 
     .story-text {
         font-size: 28px;
-        padding: 95px 20px 40px 20px;
+        margin-bottom: 2rem;
     
-        @include Large-screen() {        
-            margin: 0 20%;
-        }
+        
     }
 }
 
@@ -386,7 +388,6 @@ header {
 .content-container {
     padding: 30px 20px 64px 20px;
     text-align: left;
-    vertical-align: bottom;
 
     @include Large-screen() {
         padding: 0;

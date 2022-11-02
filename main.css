@@ -326,17 +326,17 @@ header nav .nav-list li:hover {
   background-color: #011827;
   color: #FFFFFF;
   text-align: center;
+  padding: 95px 20px;
   margin-top: 56px;
-  height: 500px;
+}
+@media (min-width: 1045px) {
+  .story-banner {
+    padding: 95px 20%;
+  }
 }
 .story-banner .story-text {
   font-size: 28px;
-  padding: 95px 20px 40px 20px;
-}
-@media (min-width: 1045px) {
-  .story-banner .story-text {
-    margin: 0 20%;
-  }
+  margin-bottom: 2rem;
 }
 
 /* || CONTENT */
@@ -366,7 +366,6 @@ header nav .nav-list li:hover {
 .content-container {
   padding: 30px 20px 64px 20px;
   text-align: left;
-  vertical-align: bottom;
 }
 @media (min-width: 1045px) {
   .content-container {
