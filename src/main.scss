@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 
@@ -347,16 +346,14 @@ header {
     text-align: center;
     padding: 95px 20px;
     margin-top: 56px;
-    // height: 500px;
+    
     @include Large-screen() {        
         padding: 95px 20%;       
     }
 
     .story-text {
         font-size: 28px;
-        margin-bottom: 2rem;
-    
-        
+        margin-bottom: 2rem;    
     }
 }
 
@@ -453,7 +450,6 @@ header {
         max-width: 1400px;
         margin:auto;
     }
-
 }
 
 footer {
