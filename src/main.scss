@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 
@@ -15,16 +16,13 @@ html {
 }
 
 body { 
-    
-    min-width: 383px;
-    
+    min-width: 383px; 
 }
 
 main {
     max-width: 1400px;
     margin: auto;
 }
-
 
 
 /* || BUTTONS */
@@ -51,7 +49,7 @@ main {
     font-weight: 700;
     margin-top: 37px;
     
-    @include M-screen() {
+    @include Large-screen() {
         height: 66px;
         width: 308px;
         font-size: 24px;
@@ -89,7 +87,7 @@ main {
 }
     
 .top-btn-container {
-    @include M-screen() {
+    @include Large-screen() {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
@@ -107,7 +105,7 @@ header {
     width: 100%;
     height: 144px;
 
-    @include M-screen() {
+    @include Large-screen() {
         height: 216px;
     }
 
@@ -128,7 +126,7 @@ header {
             width: 90px;
             font-size: 24px;
 
-            @include M-screen() {
+            @include Large-screen() {
                 width: auto;
                 font-size: 40px;
                 height: 40px;
@@ -142,7 +140,7 @@ header {
     .hamburger-container {
         margin-left: auto;
 
-        @include M-screen() {
+        @include Large-screen() {
             display: none;
         }
     
@@ -156,14 +154,14 @@ header {
     }
     
     nav {
-        @include M-screen(){
+        @include Large-screen(){
             padding-top: 20px;
         }
     
         .nav-list {
             display: none;
 
-            @include M-screen() {
+            @include Large-screen() {
                 display: flex;
                 justify-content: space-evenly;
             }
@@ -184,7 +182,7 @@ header {
 .header-img-xl {
     display: none;
 
-    @include M-screen() {
+    @include Large-screen() {
         display: block;
         width: 100%;
     }
@@ -193,7 +191,7 @@ header {
 .header-img {
     margin-bottom: 37px;
 
-    @include M-screen() {
+    @include Large-screen() {
         display: none;
     }
 }
@@ -209,7 +207,7 @@ header {
     display: flex;
     padding: 67px 20px 0 20px;
 
-    @include M-screen() {
+    @include Large-screen() {
         display: flex;
         padding-top: 107px;
     }
@@ -218,7 +216,7 @@ header {
         height: 72px;
         padding-right: 20px;
 
-        @include M-screen() {
+        @include Large-screen() {
             height: 96px;
         }
     }
@@ -238,14 +236,14 @@ header {
 .quote-2 {
     display: none;
 
-    @include M-screen() {
+    @include Large-screen() {
         display: flex;
         padding-top: 107px;
     }
 }
 
 .flex-container {
-    @include M-screen() {
+    @include Large-screen() {
         display: flex;
         padding: 0 4rem;    
     }
@@ -260,7 +258,7 @@ header {
     font-weight: 400;
     margin-top: 105px;
 
-    @include XL-screen() {
+    @include Large-screen() {
         font-size: 36px;
         margin-bottom: 87px;
     }
@@ -279,15 +277,15 @@ header {
         margin-left: 50px;
     }
 
-    @include M-screen(){
+    @include Large-screen(){
         margin-bottom: 87px;
     }
 
-    @include XL-screen() {
+    @include Large-screen() {
         margin-left: 0;
     }
 
-    @include XL-screen() {
+    @include Large-screen() {
         justify-content: space-evenly;  
         margin-top: 0;
     }
@@ -354,7 +352,7 @@ header {
         font-size: 28px;
         padding: 95px 20px 40px 20px;
     
-        @include M-screen() {        
+        @include Large-screen() {        
             margin: 0 20%;
         }
     }
@@ -370,38 +368,35 @@ header {
 .online-img-big {
     display: none;
 
-    @include XL-screen() {
+    @include Large-screen() {
         display:block;
         grid-column: 7 / span 6;
     }
 }
 
 .content-heading {
-    font-size: 32px;  
-    
-    @include XL-screen() {
-        padding: 30px 0 0 0;
-    }
+    font-size: 32px;
 }
 
 .content-text {
     font-size: 24px;
-    margin: 30px 0;
+    margin: 25px 0;
 }
 
 .content-container {
     padding: 30px 20px 64px 20px;
     text-align: left;
+    vertical-align: bottom;
 
-    @include XL-screen() {
+    @include Large-screen() {
         padding: 0;
     }
 }
 
 .content-btn {
-    margin: 30px 0; 
+    margin: 25px 0; 
 
-    @include XL-screen() {
+    @include Large-screen() {
         margin: 0;
     }
 }
@@ -411,12 +406,8 @@ header {
 }
 
 .grid-container {
-    @include M-screen() {
-        width: 80%;
-        margin:auto;
-    }
-
-    @include XL-screen() {
+   
+    @include Large-screen() {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -424,27 +415,27 @@ header {
 }
 
 .online-img-small {
-    @include XL-screen() {
+    @include Large-screen() {
         display: none;
      }    
 }
     
 .on-site-img  {
-    @include XL-screen() {
+    @include Large-screen() {
         grid-column: 1 / span 6;
         min-width: 50%;
     }
 }  
 
 .content-1 {
-    @include XL-screen() {
+    @include Large-screen() {
         grid-column: 8 / span 4;    
         margin: auto;
     }
 }
     
 .content-2 {
-    @include XL-screen() {
+    @include Large-screen() {
         grid-column: 2 / span 4;  
         margin: auto;
     }
@@ -453,17 +444,22 @@ header {
 
 /* || FOOTER */
 
+.footer-grid-container {
+    @include Large-screen() {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        margin-top: 183px;
+        max-width: 1400px;
+        margin:auto;
+    }
+
+}
+
 footer {
     background-color: $background-color;
     color:#FFFFFF;
     padding: 64px 1.5rem;
-
-    @include custom-screen(1280px) {
-        display: grid;
-        grid-template-columns: repeat(12, minmax(0, 1fr));
-        margin-top: 183px;
-    }
-    
+   
     li {
         list-style: none;
         font-size: 18px
@@ -489,20 +485,21 @@ footer {
 .follow-us {
     padding-top: 36px;
 
-    @include custom-screen(1280px) {
-        grid-column: 10 / span 1;
+    @include Large-screen() {
+        grid-column: 10 / span 2;
         padding: 0;
     }
 }
 
 .footer-info {
-    @include custom-screen(1280px) {
+    @include Large-screen() {
         grid-column: 2 / span 4;
     }
 }
 
 .site-map {
-    @include custom-screen(1280px) {
-        grid-column: 8 / span 1;
+    @include Large-screen() {
+        grid-column: 8 / span 2;
     }
 }
+

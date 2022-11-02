@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 .dark-btn, .secondary-btn, .primary-btn {
@@ -46,7 +47,7 @@ main {
   font-weight: 700;
   margin-top: 37px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1045px) {
   .online-challenges-btn {
     height: 66px;
     width: 308px;
@@ -83,7 +84,7 @@ main {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1045px) {
   .top-btn-container {
     display: flex;
     flex-direction: row-reverse;
@@ -100,7 +101,7 @@ header {
   width: 100%;
   height: 144px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1045px) {
   header {
     height: 216px;
   }
@@ -119,7 +120,7 @@ header .header-heading-container .header-heading {
   width: 90px;
   font-size: 24px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1045px) {
   header .header-heading-container .header-heading {
     width: auto;
     font-size: 40px;
@@ -132,7 +133,7 @@ header .header-heading-container .header-heading {
 header .hamburger-container {
   margin-left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 1045px) {
   header .hamburger-container {
     display: none;
   }
@@ -144,7 +145,7 @@ header .hamburger-container .line {
   border-radius: 25px;
   margin: 7px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1045px) {
   header nav {
     padding-top: 20px;
   }
@@ -152,7 +153,7 @@ header .hamburger-container .line {
 header nav .nav-list {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1045px) {
   header nav .nav-list {
     display: flex;
     justify-content: space-evenly;
@@ -170,7 +171,7 @@ header nav .nav-list li:hover {
 .header-img-xl {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1045px) {
   .header-img-xl {
     display: block;
     width: 100%;
@@ -180,7 +181,7 @@ header nav .nav-list li:hover {
 .header-img {
   margin-bottom: 37px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1045px) {
   .header-img {
     display: none;
   }
@@ -195,7 +196,7 @@ header nav .nav-list li:hover {
   display: flex;
   padding: 67px 20px 0 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1045px) {
   .quote-container {
     display: flex;
     padding-top: 107px;
@@ -205,7 +206,7 @@ header nav .nav-list li:hover {
   height: 72px;
   padding-right: 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1045px) {
   .quote-container .quote-img {
     height: 96px;
   }
@@ -223,14 +224,14 @@ header nav .nav-list li:hover {
 .quote-2 {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1045px) {
   .quote-2 {
     display: flex;
     padding-top: 107px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1045px) {
   .flex-container {
     display: flex;
     padding: 0 4rem;
@@ -244,7 +245,7 @@ header nav .nav-list li:hover {
   font-weight: 400;
   margin-top: 105px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1045px) {
   .challenges-heading {
     font-size: 36px;
     margin-bottom: 87px;
@@ -265,17 +266,17 @@ header nav .nav-list li:hover {
     margin-left: 50px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1045px) {
   .card-container {
     margin-bottom: 87px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1045px) {
   .card-container {
     margin-left: 0;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1045px) {
   .card-container {
     justify-content: space-evenly;
     margin-top: 0;
@@ -332,7 +333,7 @@ header nav .nav-list li:hover {
   font-size: 28px;
   padding: 95px 20px 40px 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1045px) {
   .story-banner .story-text {
     margin: 0 20%;
   }
@@ -346,7 +347,7 @@ header nav .nav-list li:hover {
 .online-img-big {
   display: none;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1045px) {
   .online-img-big {
     display: block;
     grid-column: 7/span 6;
@@ -356,31 +357,27 @@ header nav .nav-list li:hover {
 .content-heading {
   font-size: 32px;
 }
-@media (min-width: 1200px) {
-  .content-heading {
-    padding: 30px 0 0 0;
-  }
-}
 
 .content-text {
   font-size: 24px;
-  margin: 30px 0;
+  margin: 25px 0;
 }
 
 .content-container {
   padding: 30px 20px 64px 20px;
   text-align: left;
+  vertical-align: bottom;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1045px) {
   .content-container {
     padding: 0;
   }
 }
 
 .content-btn {
-  margin: 30px 0;
+  margin: 25px 0;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1045px) {
   .content-btn {
     margin: 0;
   }
@@ -390,13 +387,7 @@ header nav .nav-list li:hover {
   text-align: left;
 }
 
-@media (min-width: 768px) {
-  .grid-container {
-    width: 80%;
-    margin: auto;
-  }
-}
-@media (min-width: 1200px) {
+@media (min-width: 1045px) {
   .grid-container {
     width: 100%;
     display: grid;
@@ -404,27 +395,27 @@ header nav .nav-list li:hover {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1045px) {
   .online-img-small {
     display: none;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1045px) {
   .on-site-img {
     grid-column: 1/span 6;
     min-width: 50%;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1045px) {
   .content-1 {
     grid-column: 8/span 4;
     margin: auto;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1045px) {
   .content-2 {
     grid-column: 2/span 4;
     margin: auto;
@@ -432,17 +423,20 @@ header nav .nav-list li:hover {
 }
 
 /* || FOOTER */
+@media (min-width: 1045px) {
+  .footer-grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    margin-top: 183px;
+    max-width: 1400px;
+    margin: auto;
+  }
+}
+
 footer {
   background-color: #011827;
   color: #FFFFFF;
   padding: 64px 1.5rem;
-}
-@media (min-width: 1280px) {
-  footer {
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    margin-top: 183px;
-  }
 }
 footer li {
   list-style: none;
@@ -468,22 +462,22 @@ footer li {
 .follow-us {
   padding-top: 36px;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1045px) {
   .follow-us {
-    grid-column: 10/span 1;
+    grid-column: 10/span 2;
     padding: 0;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1045px) {
   .footer-info {
     grid-column: 2/span 4;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1045px) {
   .site-map {
-    grid-column: 8/span 1;
+    grid-column: 8/span 2;
   }
 }
 
