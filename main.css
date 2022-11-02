@@ -92,6 +92,7 @@ main {
     margin-top: -35px;
   }
 }
+
 /* || HEADER  */
 header {
   background-color: #011827;
@@ -235,6 +236,7 @@ header nav .nav-list li:hover {
     padding: 0 4rem;
   }
 }
+
 /* || CARDS */
 .challenges-heading {
   font-size: 32px;
@@ -388,27 +390,47 @@ header nav .nav-list li:hover {
   text-align: left;
 }
 
+@media (min-width: 768px) {
+  .grid-container {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 1200px) {
   .online-img-small {
     display: none;
   }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
+}
+
+@media (min-width: 1200px) {
   .on-site-img {
     grid-column: 1/span 6;
     min-width: 50%;
   }
+}
+
+@media (min-width: 1200px) {
   .content-1 {
     grid-column: 8/span 4;
     margin: auto;
   }
+}
+
+@media (min-width: 1200px) {
   .content-2 {
     grid-column: 2/span 4;
     margin: auto;
   }
 }
+
 /* || FOOTER */
 footer {
   background-color: #011827;
@@ -457,6 +479,9 @@ footer li {
   .footer-info {
     grid-column: 2/span 4;
   }
+}
+
+@media (min-width: 1280px) {
   .site-map {
     grid-column: 8/span 1;
   }

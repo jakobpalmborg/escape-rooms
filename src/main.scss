@@ -87,10 +87,9 @@ main {
 .btn-container {
     text-align: center;
 }
-
-@include M-screen() {
     
-    .top-btn-container {
+.top-btn-container {
+    @include M-screen() {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
@@ -245,8 +244,8 @@ header {
     }
 }
 
-@include M-screen() {
-    .flex-container {
+.flex-container {
+    @include M-screen() {
         display: flex;
         padding: 0 4rem;    
     }
@@ -411,27 +410,41 @@ header {
     text-align: left;
 }
 
-@include XL-screen() {
-    .online-img-small {
-        display: none;
+.grid-container {
+    @include M-screen() {
+        width: 80%;
+        margin:auto;
     }
-    
-    .grid-container {
+
+    @include XL-screen() {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(12, minmax(0, 1fr));
     }
+}
 
-    .on-site-img  {
+.online-img-small {
+    @include XL-screen() {
+        display: none;
+     }    
+}
+    
+.on-site-img  {
+    @include XL-screen() {
         grid-column: 1 / span 6;
         min-width: 50%;
     }
-      
-    .content-1 {
+}  
+
+.content-1 {
+    @include XL-screen() {
         grid-column: 8 / span 4;    
         margin: auto;
     }
+}
     
-    .content-2 {
+.content-2 {
+    @include XL-screen() {
         grid-column: 2 / span 4;  
         margin: auto;
     }
@@ -482,13 +495,14 @@ footer {
     }
 }
 
-@include custom-screen(1280px) {
-    
-    .footer-info {
+.footer-info {
+    @include custom-screen(1280px) {
         grid-column: 2 / span 4;
     }
+}
 
-    .site-map {
+.site-map {
+    @include custom-screen(1280px) {
         grid-column: 8 / span 1;
     }
 }
