@@ -17,6 +17,10 @@ html {
 }
 
 body {
+  min-width: 383px;
+}
+
+main {
   max-width: 1400px;
   margin: auto;
 }
@@ -181,7 +185,7 @@ header nav .nav-list li:hover {
   }
 }
 
-.header-img, .content-img {
+.header-img {
   width: 100%;
 }
 
@@ -333,6 +337,10 @@ header nav .nav-list li:hover {
 }
 
 /* || CONTENT */
+.content-img {
+  width: 100%;
+}
+
 .online-img-big {
   display: none;
 }
