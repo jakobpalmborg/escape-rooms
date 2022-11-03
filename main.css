@@ -339,6 +339,14 @@ header nav .nav-list li:hover {
 }
 
 /* || CONTENT */
+@media (min-width: 1045px) {
+  .content-grid-container {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    display: grid;
+    width: 100%;
+  }
+}
+
 .content-img {
   width: 100%;
 }
@@ -383,14 +391,6 @@ header nav .nav-list li:hover {
 
 .content-btn-container {
   text-align: left;
-}
-
-@media (min-width: 1045px) {
-  .grid-container {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    display: grid;
-    width: 100%;
-  }
 }
 
 @media (min-width: 1045px) {

@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 @import "helper/placeholders";
 @import "helper/mixins";
 @import "helper/variables";
@@ -361,6 +360,15 @@ header {
 
 /* || CONTENT */
 
+.content-grid-container {
+   
+    @include Large-screen() {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        display: grid;
+        width: 100%;
+    }
+}
+
 .content-img {
     width: 100%;
 }
@@ -404,15 +412,6 @@ header {
     text-align: left;
 }
 
-.grid-container {
-   
-    @include Large-screen() {
-        grid-template-columns: repeat(12, minmax(0, 1fr));
-        display: grid;
-        width: 100%;
-    }
-}
-
 .online-img-small {
     @include Large-screen() {
         display: none;
@@ -448,7 +447,6 @@ header {
         display: grid;
         grid-template-columns: repeat(12, minmax(0, 1fr));
         margin:auto;
-        // margin-top: 183px;
         max-width: 1400px;
     }
 }
