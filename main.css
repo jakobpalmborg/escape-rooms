@@ -21,15 +21,15 @@ body {
 }
 
 main {
-  max-width: 1400px;
   margin: auto;
+  max-width: 1400px;
 }
 
 /* || BUTTONS */
 .primary-btn {
   background-color: #E3170A;
-  color: white;
   border: none;
+  color: white;
 }
 
 .secondary-btn {
@@ -38,39 +38,39 @@ main {
 }
 
 .online-challenges-btn {
-  font-size: 16px;
   background: transparent;
   border: none;
-  text-decoration: underline;
   color: #36769D;
+  font-size: 16px;
   font-weight: 700;
   margin-top: 37px;
+  text-decoration: underline;
 }
 @media (min-width: 1045px) {
   .online-challenges-btn {
-    height: 66px;
-    width: 308px;
+    background-color: #E3170A;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    display: block;
     font-size: 24px;
     font-weight: 700;
-    border-radius: 4px;
-    background-color: #E3170A;
-    color: white;
-    border: none;
-    display: block;
-    text-decoration: none;
+    height: 66px;
     margin-top: 0;
+    text-decoration: none;
+    width: 308px;
   }
 }
 
 .card-btn {
-  height: 44px;
-  width: 179px;
+  background-color: #E3170A;
+  border: none;
+  border-radius: 4px;
+  color: white;
   font-size: 16px;
   font-weight: 700;
-  border-radius: 4px;
-  background-color: #E3170A;
-  color: white;
-  border: none;
+  height: 44px;
+  width: 179px;
 }
 
 .dark-btn {
@@ -87,8 +87,8 @@ main {
   .top-btn-container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
     gap: 17px;
+    justify-content: center;
     margin-top: -35px;
   }
 }
@@ -97,8 +97,8 @@ main {
 header {
   background-color: #011827;
   color: #ffffff;
-  width: 100%;
   height: 144px;
+  width: 100%;
 }
 @media (min-width: 1045px) {
   header {
@@ -114,19 +114,19 @@ header .header-heading-container .logo img {
   vertical-align: bottom;
 }
 header .header-heading-container .header-heading {
-  margin-left: 13px;
-  height: 82px;
-  width: 90px;
   font-size: 24px;
+  height: 82px;
+  margin-left: 13px;
+  width: 90px;
 }
 @media (min-width: 1045px) {
   header .header-heading-container .header-heading {
-    width: auto;
     font-size: 40px;
     height: 40px;
     margin-top: auto;
     margin-bottom: 5px;
     margin-left: 24 px;
+    width: auto;
   }
 }
 header .hamburger-container {
@@ -138,11 +138,11 @@ header .hamburger-container {
   }
 }
 header .hamburger-container .line {
-  width: 51px;
-  height: 6px;
   background-color: #FFFFFF;
   border-radius: 25px;
+  height: 6px;
   margin: 7px;
+  width: 51px;
 }
 @media (min-width: 1045px) {
   header nav {
@@ -159,9 +159,9 @@ header nav .nav-list {
   }
 }
 header nav .nav-list li {
-  list-style: none;
   font-size: 24px;
   font-weight: 700;
+  list-style: none;
 }
 header nav .nav-list li:hover {
   color: #8ACFE5;
@@ -215,9 +215,9 @@ header nav .nav-list li:hover {
   font-style: italic;
 }
 .quote-container .quote-text .quote-span {
-  margin-top: 5px;
   display: block;
   font-size: 18px;
+  margin-top: 5px;
 }
 
 .quote-2 {
@@ -240,9 +240,9 @@ header nav .nav-list li:hover {
 /* || CARDS */
 .challenges-heading {
   font-size: 32px;
-  text-align: center;
   font-weight: 400;
   margin-top: 105px;
+  text-align: center;
 }
 @media (min-width: 1045px) {
   .challenges-heading {
@@ -253,12 +253,12 @@ header nav .nav-list li:hover {
 
 .card-container {
   display: flex;
-  margin-bottom: 47px;
   gap: 37px;
+  margin-bottom: 47px;
+  margin-top: 44px;
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  margin-top: 44px;
 }
 @media (min-width: 470px) {
   .card-container {
@@ -285,12 +285,12 @@ header nav .nav-list li:hover {
   display: none;
 }
 .card-container .card {
-  min-width: 363px;
-  max-width: 363px;
-  height: 446px;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px 0px;
+  height: 446px;
   margin: 10px;
+  max-width: 363px;
+  min-width: 363px;
 }
 .card-container .card .card-img {
   width: 100%;
@@ -316,17 +316,17 @@ header nav .nav-list li:hover {
   margin: 0.5rem 1rem;
 }
 .card-container .card .card-btn-container {
-  text-align: right;
   margin: 0.5rem 1rem;
+  text-align: right;
 }
 
 /* || STORY */
 .story-banner {
   background-color: #011827;
   color: #FFFFFF;
-  text-align: center;
-  padding: 95px 20px;
   margin-top: 56px;
+  padding: 95px 20px;
+  text-align: center;
 }
 @media (min-width: 1045px) {
   .story-banner {
@@ -387,9 +387,9 @@ header nav .nav-list li:hover {
 
 @media (min-width: 1045px) {
   .grid-container {
-    width: 100%;
-    display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
+    display: grid;
+    width: 100%;
   }
 }
 
@@ -425,9 +425,8 @@ header nav .nav-list li:hover {
   .footer-grid-container {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    margin-top: 183px;
-    max-width: 1400px;
     margin: auto;
+    max-width: 1400px;
   }
 }
 
@@ -437,8 +436,8 @@ footer {
   padding: 64px 1.5rem;
 }
 footer li {
-  list-style: none;
   font-size: 18px;
+  list-style: none;
 }
 
 .footer-heading {

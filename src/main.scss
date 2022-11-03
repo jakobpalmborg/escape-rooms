@@ -19,8 +19,8 @@ body {
 }
 
 main {
-    max-width: 1400px;
     margin: auto;
+    max-width: 1400px;
 }
 
 
@@ -29,8 +29,8 @@ main {
 .primary-btn {
     @extend %large-btn;
     background-color: $primary-btn-color;
-    color: white;
     border: none;
+    color: white;
 }
 
 .secondary-btn {
@@ -40,38 +40,39 @@ main {
 }
 
 .online-challenges-btn {
-    font-size: 16px;
+    
     background: transparent;
     border: none;
-    text-decoration: underline;
     color: #36769D;
+    font-size: 16px;
     font-weight: 700;
     margin-top: 37px;
+    text-decoration: underline;
     
     @include Large-screen() {
-        height: 66px;
-        width: 308px;
+        background-color: $primary-btn-color;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        display: block;
         font-size: 24px;
         font-weight: 700;
-        border-radius: 4px;
-        background-color: $primary-btn-color;
-        color: white;
-        border: none;
-        display: block;
-        text-decoration: none;
+        height: 66px;
         margin-top: 0;
+        text-decoration: none;
+        width: 308px;
     }
 }
 
 .card-btn {
-    height: 44px;
-    width: 179px;
+    background-color: $primary-btn-color;
+    border: none;
+    border-radius: 4px;
+    color: white;
     font-size: 16px;
     font-weight: 700;
-    border-radius: 4px;
-    background-color: $primary-btn-color;
-    color: white;
-    border: none;
+    height: 44px;
+    width: 179px;
 }
 
 .dark-btn {
@@ -89,8 +90,8 @@ main {
     @include Large-screen() {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: center;
         gap: 17px;
+        justify-content: center;
         margin-top: -35px;
     }
 }
@@ -101,9 +102,9 @@ main {
 header {
     background-color: $background-color; 
     color: #ffffff;
-    width: 100%;
     height: 144px;
-
+    width: 100%;
+    
     @include Large-screen() {
         height: 216px;
     }
@@ -120,18 +121,18 @@ header {
         }
         
         .header-heading {
-            margin-left: 13px;
-            height: 82px;
-            width: 90px;
             font-size: 24px;
-
+            height: 82px;
+            margin-left: 13px;
+            width: 90px;
+            
             @include Large-screen() {
-                width: auto;
                 font-size: 40px;
                 height: 40px;
                 margin-top: auto;
                 margin-bottom: 5px;
                 margin-left: 24 px;
+                width: auto;
             }
         }
     }
@@ -144,11 +145,11 @@ header {
         }
     
         .line {
-            width: 51px;
-            height: 6px;
             background-color: #FFFFFF;
             border-radius: 25px;
+            height: 6px;
             margin: 7px;
+            width: 51px;
         }
     }
     
@@ -166,9 +167,9 @@ header {
             }
         
             li {
-                list-style: none;
                 font-size: 24px;
                 font-weight: 700;
+                list-style: none;
         
                 &:hover {
                     color: $secondary-btn-color;
@@ -225,9 +226,9 @@ header {
         font-style: italic;
     
         .quote-span {
-            margin-top: 5px;
             display: block;
             font-size: 18px;
+            margin-top: 5px;
         }
     }
 }
@@ -253,9 +254,9 @@ header {
 
 .challenges-heading {
     font-size: 32px;
-    text-align: center;
     font-weight: 400;
     margin-top: 105px;
+    text-align: center;
 
     @include Large-screen() {
         font-size: 36px;
@@ -265,12 +266,12 @@ header {
 
 .card-container {
     display: flex;
-    margin-bottom: 47px;
     gap: 37px;
+    margin-bottom: 47px;
+    margin-top: 44px;
     overflow: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none; 
-    margin-top: 44px;
 
     @include custom-screen(470px) {
         margin-left: 50px;
@@ -294,13 +295,13 @@ header {
     }
     
     .card {
-    min-width: 363px;
-    max-width: 363px;
-    height: 446px;   
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px 0px;
-    margin: 10px;
-       
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px 0px;
+        height: 446px;   
+        margin: 10px;
+        max-width: 363px;
+        min-width: 363px;
+        
         .card-img {
         width: 100%;
         }
@@ -331,8 +332,8 @@ header {
         }
         
         .card-btn-container {
-            text-align: right;
             margin: 0.5rem 1rem;
+            text-align: right;
         }
     }
 }
@@ -343,9 +344,9 @@ header {
 .story-banner {
     background-color: $background-color;
     color:#FFFFFF;
-    text-align: center;
-    padding: 95px 20px;
     margin-top: 56px;
+    padding: 95px 20px;
+    text-align: center;
     
     @include Large-screen() {        
         padding: 95px 20%;       
@@ -406,9 +407,9 @@ header {
 .grid-container {
    
     @include Large-screen() {
-        width: 100%;
-        display: grid;
         grid-template-columns: repeat(12, minmax(0, 1fr));
+        display: grid;
+        width: 100%;
     }
 }
 
@@ -446,9 +447,9 @@ header {
     @include Large-screen() {
         display: grid;
         grid-template-columns: repeat(12, minmax(0, 1fr));
-        margin-top: 183px;
-        max-width: 1400px;
         margin:auto;
+        // margin-top: 183px;
+        max-width: 1400px;
     }
 }
 
@@ -458,8 +459,8 @@ footer {
     padding: 64px 1.5rem;
    
     li {
+        font-size: 18px;
         list-style: none;
-        font-size: 18px
     }
 }
 
