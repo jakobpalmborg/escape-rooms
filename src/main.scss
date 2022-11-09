@@ -155,7 +155,10 @@ header {
             }
     }
 
-    
+    .hamburger-cross {
+        position: relative;
+        z-index: 3;
+    }
     
     nav {
         
@@ -166,7 +169,7 @@ header {
             padding-top: 20px;
         }
         
-        
+          
         ul { 
             
             display: flex;

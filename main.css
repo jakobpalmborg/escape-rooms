@@ -148,6 +148,10 @@ header .hamburger-container .line {
   margin: 7px;
   width: 51px;
 }
+header .hamburger-cross {
+  position: relative;
+  z-index: 3;
+}
 header nav {
   display: none;
 }
