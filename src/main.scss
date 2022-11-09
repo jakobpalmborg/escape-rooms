@@ -170,16 +170,19 @@ header {
         ul { 
             
             display: flex;
-                justify-content: space-around;
-                flex-direction: column;
-                border: 1px solid red;
-                padding: 40% 0;
-                height:100%;
+            justify-content: space-around;
+            flex-direction: column;
+            border: 1px solid red;
+            padding: 40% 0;
+            height:100%;
                 
 
             @include Large-screen() {
+                flex-direction: row;
                 display: flex;
                 justify-content: space-evenly;
+                padding: 0;
+                height: auto;
             }
         
             li {
@@ -212,6 +215,19 @@ header {
     z-index: 2;
     margin: auto;
     text-align: center;
+
+    @include Large-screen() {
+        
+        width: auto;
+        height: auto;
+        position: relative;
+        top:auto;
+        right:auto;
+        bottom:auto;
+        left:auto;
+    
+    }
+    
 }
 
 .header-img-xl {

@@ -166,8 +166,11 @@ header nav ul {
 }
 @media (min-width: 1045px) {
   header nav ul {
+    flex-direction: row;
     display: flex;
     justify-content: space-evenly;
+    padding: 0;
+    height: auto;
   }
 }
 header nav ul li {
@@ -197,6 +200,17 @@ header nav ul li:hover {
   z-index: 2;
   margin: auto;
   text-align: center;
+}
+@media (min-width: 1045px) {
+  .nav-list-show {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
 }
 
 .header-img-xl {
