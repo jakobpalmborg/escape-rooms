@@ -142,23 +142,40 @@ header {
         @include Large-screen() {
             display: none;
         }
-    
-        .line {
-            background-color: #FFFFFF;
-            border-radius: 25px;
-            height: 6px;
-            margin: 7px;
-            width: 51px;
+        button {
+            background-color: transparent;
+            border: none;
         }
+            .line {
+                background-color: #FFFFFF;
+                border-radius: 25px;
+                height: 6px;
+                margin: 7px;
+                width: 51px;
+            }
     }
+
+    
     
     nav {
+        
+        display: none;
+        
+       
         @include Large-screen(){
             padding-top: 20px;
         }
-    
-        .nav-list {
-            display: none;
+        
+        
+        ul { 
+            
+            display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                border: 1px solid red;
+                padding: 40% 0;
+                height:100%;
+                
 
             @include Large-screen() {
                 display: flex;
@@ -166,16 +183,35 @@ header {
             }
         
             li {
-                font-size: 24px;
-                font-weight: 700;
                 list-style: none;
-        
+                font-size:36px;
+                font-weight: 700;
+
+                @include Large-screen() {
+                font-size: 24px;
+                
+                }
                 &:hover {
                     color: $secondary-btn-color;
                 } 
             }
         }
     }
+}
+
+.nav-list-show {
+    display:block;
+    width: 90vw;
+    height: 95vh;
+    background-color: $background-color;
+    position: absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    z-index: 2;
+    margin: auto;
+    text-align: center;
 }
 
 .header-img-xl {

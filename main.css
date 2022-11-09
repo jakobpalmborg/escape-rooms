@@ -137,6 +137,10 @@ header .hamburger-container {
     display: none;
   }
 }
+header .hamburger-container button {
+  background-color: transparent;
+  border: none;
+}
 header .hamburger-container .line {
   background-color: #FFFFFF;
   border-radius: 25px;
@@ -144,27 +148,55 @@ header .hamburger-container .line {
   margin: 7px;
   width: 51px;
 }
+header nav {
+  display: none;
+}
 @media (min-width: 1045px) {
   header nav {
     padding-top: 20px;
   }
 }
-header nav .nav-list {
-  display: none;
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 1px solid red;
+  padding: 40% 0;
+  height: 100%;
 }
 @media (min-width: 1045px) {
-  header nav .nav-list {
+  header nav ul {
     display: flex;
     justify-content: space-evenly;
   }
 }
-header nav .nav-list li {
-  font-size: 24px;
-  font-weight: 700;
+header nav ul li {
   list-style: none;
+  font-size: 36px;
+  font-weight: 700;
 }
-header nav .nav-list li:hover {
+@media (min-width: 1045px) {
+  header nav ul li {
+    font-size: 24px;
+  }
+}
+header nav ul li:hover {
   color: #8ACFE5;
+}
+
+.nav-list-show {
+  display: block;
+  width: 90vw;
+  height: 95vh;
+  background-color: #011827;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 2;
+  margin: auto;
+  text-align: center;
 }
 
 .header-img-xl {
