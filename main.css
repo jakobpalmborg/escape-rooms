@@ -155,6 +155,11 @@ header .hamburger-cross {
 header .hamburger-cross-container {
   text-align: right;
 }
+@media (min-width: 1045px) {
+  header .hamburger-cross-container {
+    display: none;
+  }
+}
 header .line-1 {
   transform: translate(-10px, 20px) rotate(45deg);
 }
@@ -166,6 +171,7 @@ header nav {
 }
 @media (min-width: 1045px) {
   header nav {
+    display: block;
     padding-top: 20px;
   }
 }
@@ -210,7 +216,6 @@ header nav ul li:hover {
   z-index: 2;
   margin: auto;
   text-align: center;
-  border: 1px solid red;
 }
 .nav-list-show button {
   background-color: transparent;
