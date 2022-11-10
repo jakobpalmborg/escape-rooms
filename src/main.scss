@@ -159,7 +159,25 @@ header {
         position: relative;
         z-index: 3;
     }
+
+    .hamburger-cross-container {
+        text-align: right;
+    }
     
+    .line-1 {
+        transform: translate(-10px, 20px ) rotate(45deg);
+    }
+
+    .line-2 {
+        // background-color: transparent;
+        
+        transform: translate(-10px, 7px) rotate(-45deg);
+    }
+
+    .line-3 {
+
+    }
+
     nav {
         
         display: none;
@@ -175,9 +193,8 @@ header {
             display: flex;
             justify-content: space-around;
             flex-direction: column;
-            border: 1px solid red;
-            padding: 40% 0;
-            height:100%;
+            height: 60vh;
+            padding-top: 20vh;
                 
 
             @include Large-screen() {
@@ -207,17 +224,31 @@ header {
 
 .nav-list-show {
     display:block;
-    width: 90vw;
-    height: 95vh;
+    
     background-color: $background-color;
     position: absolute;
-    top:0px;
-    right:0px;
-    bottom:0px;
-    left:0px;
+    top:19px;
+    right:19px;
+    bottom:19px;
+    left:19px;
     z-index: 2;
     margin: auto;
     text-align: center;
+    border: 1px solid red;
+    
+   
+
+    button {
+        background-color: transparent;
+        border: none;
+    }
+        .line {
+            background-color: #FFFFFF;
+            border-radius: 25px;
+            height: 6px;
+            margin: 7px;
+            width: 51px;
+        }
 
     @include Large-screen() {
         

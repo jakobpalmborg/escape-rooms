@@ -152,6 +152,15 @@ header .hamburger-cross {
   position: relative;
   z-index: 3;
 }
+header .hamburger-cross-container {
+  text-align: right;
+}
+header .line-1 {
+  transform: translate(-10px, 20px) rotate(45deg);
+}
+header .line-2 {
+  transform: translate(-10px, 7px) rotate(-45deg);
+}
 header nav {
   display: none;
 }
@@ -164,9 +173,8 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  border: 1px solid red;
-  padding: 40% 0;
-  height: 100%;
+  height: 60vh;
+  padding-top: 20vh;
 }
 @media (min-width: 1045px) {
   header nav ul {
@@ -193,17 +201,27 @@ header nav ul li:hover {
 
 .nav-list-show {
   display: block;
-  width: 90vw;
-  height: 95vh;
   background-color: #011827;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 19px;
+  right: 19px;
+  bottom: 19px;
+  left: 19px;
   z-index: 2;
   margin: auto;
   text-align: center;
+  border: 1px solid red;
+}
+.nav-list-show button {
+  background-color: transparent;
+  border: none;
+}
+.nav-list-show .line {
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  height: 6px;
+  margin: 7px;
+  width: 51px;
 }
 @media (min-width: 1045px) {
   .nav-list-show {
