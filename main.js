@@ -1,19 +1,21 @@
-const hamburgerBtn = document.querySelector('.hamburger-btn');
+const hamburgerBtn = document.querySelector('#hamburger-btn');
 hamburgerBtn.addEventListener('click', openHamburgerMeny);
 const navList = document.querySelector('nav');
-const hamburgerCrossBtn = document.querySelector('.hamburger-cross');
+const hamburgerCrossBtn = document.querySelector('#hamburger-cross');
 hamburgerCrossBtn.addEventListener('click', closeHamburgerMeny)
-const body = document.querySelector('body');
-const header = document.querySelector('header')
+const backDrop = document.querySelector('div')
 
 
 
 function openHamburgerMeny() {
     navList.classList.add('nav-list-show');
-    body.classList.add('fade-out-animation');
+    backDrop.classList.add('backdrop');
+    hamburgerCrossBtn.classList.add('hamburger-cross');
     
 }
  
 function closeHamburgerMeny() {
     navList.classList.remove('nav-list-show');
+    backDrop.classList.remove('backdrop');
+    hamburgerCrossBtn.classList.add('hamburger-cross');
 }

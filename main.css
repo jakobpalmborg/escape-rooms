@@ -20,10 +20,6 @@ body {
   min-width: 383px;
 }
 
-.fade-out-animation {
-  animation: fade-out-animation 1s forwards;
-}
-
 main {
   margin: auto;
   max-width: 1400px;
@@ -97,7 +93,7 @@ main {
   }
 }
 
-/* || HEADER  */
+/* || HEADER & NAV  */
 header {
   background-color: #011827;
   color: #ffffff;
@@ -155,7 +151,7 @@ header .hamburger-container .line {
 header .nav-list-show {
   display: block;
   background-color: #011827;
-  position: absolute;
+  position: fixed;
   top: 19px;
   right: 19px;
   bottom: 19px;
@@ -163,7 +159,10 @@ header .nav-list-show {
   z-index: 2;
   margin: auto;
   text-align: center;
-  animation: mobile-meny-scaling 0.3s forwards;
+  animation: mobile-meny-scaling 0.4s forwards;
+  animation-delay: 0.1s;
+  transform: scale(0.95);
+  opacity: 0;
 }
 @media (min-width: 1045px) {
   header .nav-list-show {
@@ -197,7 +196,7 @@ header nav {
 }
 header nav .hamburger-cross-container {
   text-align: right;
-  transform: translate(-20px, 20px);
+  transform: translate(-15px, 40px);
 }
 @media (min-width: 1045px) {
   header nav .hamburger-cross-container {
@@ -209,9 +208,12 @@ header nav .hamburger-cross-container .hamburger-cross {
   z-index: 3;
   background-color: transparent;
   border: none;
+  animation: cross-fade-in 0.2s forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
 }
 header nav .hamburger-cross-container .line {
-  background-color: #FFFFFF;
+  background-color: rgb(255, 255, 255);
   border-radius: 25px;
   height: 6px;
   margin: 7px;
@@ -222,6 +224,14 @@ header nav .hamburger-cross-container .line-1 {
 }
 header nav .hamburger-cross-container .line-2 {
   transform: translate(0px, -13px) rotate(-45deg);
+}
+@keyframes cross-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 header nav ul {
   display: flex;
@@ -253,6 +263,28 @@ header nav ul li:hover {
   color: #8ACFE5;
 }
 
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  animation: backdrop-fade-in 0.5s forwards;
+}
+@media (min-width: 1045px) {
+  .backdrop {
+    display: none;
+  }
+}
+
+@keyframes backdrop-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
 .header-img-xl {
   display: none;
 }
