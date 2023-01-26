@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "sass --no-source-map --watch src/main.scss static/main.css"
+    "watch": "sass --no-source-map --watch src/main.scss main.css"
   },
   "repository": {
     "type": "git",
