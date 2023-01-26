@@ -1,0 +1,88 @@
+/* || CARDS */
+
+.challenges-heading {
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 105px;
+    text-align: center;
+
+    @include Large-screen() {
+        font-size: 36px;
+        margin-bottom: 87px;
+    }
+}
+
+.card-container {
+    display: flex;
+    gap: 37px;
+    margin-bottom: 47px;
+    margin-top: 44px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+
+    @include custom-screen(470px) {
+        margin-left: 50px;
+    }
+
+    @include Large-screen(){
+        margin-bottom: 87px;
+    }
+
+    @include Large-screen() {
+        margin-left: 0;
+    }
+
+    @include Large-screen() {
+        justify-content: space-evenly;  
+        margin-top: 0;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .card {
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px 0px;
+        height: 446px;   
+        margin: 10px;
+        max-width: 363px;
+        min-width: 363px;
+        
+        .card-img {
+        width: 100%;
+        }
+
+        .card-heading {
+            font-size: 28px;
+            font-weight: 400;
+            margin: 0.5rem 1rem;
+        }
+        
+        .star-container {
+            display: inline;
+            margin: 0.5rem 1rem;
+        
+            img {
+                margin-right: 3px;
+            }
+        }
+        
+        .participants {
+            display: inline;
+            font-size: 14px;
+            margin-left: 6px;
+        }
+        
+        .card-text {
+            margin: 0.5rem 1rem;
+        }
+        
+        .card-btn-container {
+            margin: 0.5rem 1rem;
+            text-align: right;
+        }
+    }
+}
+

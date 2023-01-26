@@ -1,0 +1,72 @@
+/* || BUTTONS */
+
+.primary-btn {
+    @extend %large-btn;
+    background-color: $primary-btn-color;
+    border: none;
+    color: white;
+}
+
+.secondary-btn {
+    @extend %large-btn;
+    background-color: $secondary-btn-color;
+    border: none;   
+}
+
+.online-challenges-btn {
+    
+    background: transparent;
+    border: none;
+    color: #36769D;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 37px;
+    text-decoration: underline;
+    
+    @include Large-screen() {
+        background-color: $primary-btn-color;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        display: block;
+        font-size: 24px;
+        font-weight: 700;
+        height: 66px;
+        margin-top: 0;
+        text-decoration: none;
+        width: 308px;
+    }
+}
+
+.card-btn {
+    background-color: $primary-btn-color;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    height: 44px;
+    width: 179px;
+}
+
+.dark-btn {
+    @extend %large-btn;
+    background: transparent;
+    border: 2px solid #8ACFE5;
+    color: $secondary-btn-color;
+}
+
+.btn-container {
+    text-align: center;
+}
+    
+.top-btn-container {
+    @include Large-screen() {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 17px;
+        justify-content: center;
+        margin-top: -35px;
+    }
+}
+

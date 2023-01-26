@@ -1,0 +1,22 @@
+/* || STORY */
+
+.story-banner {
+    background-color: $background-color;
+    color:#FFFFFF;
+    margin-top: 56px;
+    padding: 95px 20px;
+    text-align: center;
+    
+    @include Large-screen() {        
+        padding: 95px 20%;       
+    }
+
+    .story-text {
+        font-size: 28px;
+        margin-bottom: 2rem;    
+    }
+}
+
+
+
+

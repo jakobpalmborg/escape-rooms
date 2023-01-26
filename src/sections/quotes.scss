@@ -1,0 +1,47 @@
+/* || QUOTES */
+
+.quote-container {
+    display: flex;
+    padding: 67px 20px 0 20px;
+
+    @include Large-screen() {
+        display: flex;
+        padding-top: 107px;
+    }
+
+    .quote-img {
+        height: 72px;
+        padding-right: 20px;
+
+        @include Large-screen() {
+            height: 96px;
+        }
+    }
+    
+    .quote-text {
+        font-size: 24px;
+        font-style: italic;
+    
+        .quote-span {
+            display: block;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+    }
+}
+
+.quote-2 {
+    display: none;
+
+    @include Large-screen() {
+        display: flex;
+        padding-top: 107px;
+    }
+}
+
+.flex-container {
+    @include Large-screen() {
+        display: flex;
+        padding: 0 4rem;    
+    }
+}
